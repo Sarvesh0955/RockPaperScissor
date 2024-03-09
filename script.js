@@ -59,8 +59,13 @@ let playGame = () => {
             computerScore++;
     }
 
+    console.log("Player score is : " + playerScore);
+    console.log("Computer score is : " + computerScore);
+
     if(computerScore < playerScore)
         console.log("Player Wins");
-    else
+    else if(computerScore == playerScore)
+        console.log("Draw");
+    else 
         console.log("Computer Wins");
 }
